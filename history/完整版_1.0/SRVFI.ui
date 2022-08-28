@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1364</width>
+    <height>966</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QWidget" name="widget_4" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QWidget" name="widget" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>500</width>
+             <height>0</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label_input">
+              <property name="text">
+               <string>输入路径</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="in_path">
+              <property name="acceptDrops">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_output">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>输出路径</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="out_path">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QTabWidget" name="tabWidget">
+           <property name="minimumSize">
+            <size>
+             <width>600</width>
+             <height>400</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>500</width>
+             <height>400</height>
+            </size>
+           </property>
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="tab">
+            <attribute name="title">
+             <string>超分设置</string>
+            </attribute>
+            <widget class="QComboBox" name="Box_device">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>280</y>
+               <width>411</width>
+               <height>41</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_device">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>280</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>超分GPU</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_model">
+             <property name="geometry">
+              <rect>
+               <x>210</x>
+               <y>10</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>模型选择</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="Box_method">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>40</y>
+               <width>151</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>Real_Cugan</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="Box_model">
+             <property name="geometry">
+              <rect>
+               <x>210</x>
+               <y>40</y>
+               <width>331</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>pro-conservative-up2x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>pro-conservative-up3x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>pro-denoise3x-up2x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>pro-denoise3x-up3x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>pro-no-denoise3x-up2x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>pro-no-denoise3x-up3x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up2x-latest-conservative.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up2x-latest-denoise1x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up2x-latest-denoise2x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up2x-latest-denoise3x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up2x-latest-no-denoise.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up3x-latest-conservative.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up3x-latest-denoise3x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up3x-latest-no-denoise.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up4x-latest-conservative.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up4x-latest-denoise3x.pth</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>up4x-latest-no-denoise.pth</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="label_method">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>81</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>算法选择</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_scale">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>110</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>超分倍数</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_alpha">
+             <property name="geometry">
+              <rect>
+               <x>350</x>
+               <y>110</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>alpha</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_cache">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>110</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>cache</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="Box_scale">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>140</y>
+               <width>71</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="Box_cache">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>140</y>
+               <width>71</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="Box_half">
+             <property name="geometry">
+              <rect>
+               <x>450</x>
+               <y>140</y>
+               <width>91</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>False</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>True</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="Box_tile">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>140</y>
+               <width>71</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="label_half">
+             <property name="geometry">
+              <rect>
+               <x>460</x>
+               <y>110</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>半精度开关</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_tile">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>110</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>tile</string>
+             </property>
+            </widget>
+            <widget class="QDoubleSpinBox" name="number_alpha">
+             <property name="geometry">
+              <rect>
+               <x>350</x>
+               <y>140</y>
+               <width>71</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="maximum">
+              <double>2.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.100000000000000</double>
+             </property>
+             <property name="value">
+              <double>1.000000000000000</double>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tab_2">
+            <attribute name="title">
+             <string>压制设置</string>
+            </attribute>
+            <widget class="QComboBox" name="Box_preset">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>230</y>
+               <width>111</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>slow</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ultrafast</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>superfast</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>veryfast</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>faster</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>fast</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>medium</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>slower</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>veryslow</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>placebo</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="Box_encode">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>71</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>CPU</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="Box_yuv">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>40</y>
+               <width>131</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>yuv420p10le</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>yuv444p10le</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>yuv420p</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>yuv444p</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="label_encode">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>编码器</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_preset">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>200</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>压制预设</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="encode_vcode">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>40</y>
+               <width>71</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>H265</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>H264</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="label_vcode">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>10</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>编码格式</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_yuv">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>10</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>yuv格式</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_free">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>320</y>
+               <width>441</width>
+               <height>41</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_free">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>280</y>
+               <width>161</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>自定义压制参数</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="Button_CRF">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>110</y>
+               <width>101</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>CRF质量</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="Button_Bitrate">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>150</y>
+               <width>101</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>目标码率(M)</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_CRF">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>110</y>
+               <width>171</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>16</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_Bitrate">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>150</y>
+               <width>171</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>10</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="Box_profile">
+             <property name="geometry">
+              <rect>
+               <x>400</x>
+               <y>40</y>
+               <width>101</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>main10</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="label_profile">
+             <property name="geometry">
+              <rect>
+               <x>400</x>
+               <y>10</y>
+               <width>71</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>配置参数</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_format">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>200</y>
+               <width>111</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>输出文件格式</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="Box_format">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>230</y>
+               <width>111</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>mp4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>mkv</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>mov</string>
+              </property>
+             </item>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_message">
+           <property name="text">
+            <string>信息框</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="Button_start">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>150</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>一键启动</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QTextBrowser" name="textBrowser"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
