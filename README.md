@@ -6,4 +6,7 @@
 方法一：  
 便携版环境直接点击 点我运行.bat（便携版环境还在制作中）    
 方法二：  
-下载主要文件，cmd运行python SR_Main.py
+下载主要文件，cmd运行python SR_Main.py    
+
+Real-cugan原项目地址:  
+https://github.com/bilibili/ailab/tree/main/Real-CUGAN
