@@ -1,4 +1,4 @@
-# python_real_cugan
+# ASUT(Anime Upscale Tool)
 基于real_cugan+ffmpeg管道拆帧->超分辨率->压制的二次元动漫超分辨率开源GUI项目。  
 使用前确保你电脑的环境变量里有ffmpeg    
 
