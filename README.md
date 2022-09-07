@@ -13,5 +13,7 @@
 方法二：  
 下载主要文件，cmd运行python AUST_Main.py    
 
+相关B站教程链接:  
+https://www.bilibili.com/read/cv18481177  
 Real-cugan原项目地址:  
 https://github.com/bilibili/ailab/tree/main/Real-CUGAN
