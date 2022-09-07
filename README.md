@@ -3,7 +3,13 @@
 使用前确保你电脑的环境变量里有ffmpeg    
 
 ***便携版下载地址，下载解压即可使用：***  
-**`百度网盘下载地址：链接：https://pan.baidu.com/s/1AQCp-vUy1ROD8jKHEQtE2Q?pwd=Nang `**
+
+```
+百度网盘下载地址：
+
+链接：https://pan.baidu.com/s/1AQCp-vUy1ROD8jKHEQtE2Q?pwd=Nang
+```
+
 
 ***跪求大佬们测试提BUG和改进意见***
 
@@ -13,7 +19,6 @@
 方法二：  
 下载主要文件，cmd运行python AUST_Main.py    
 
-相关B站教程链接:  
-https://www.bilibili.com/read/cv18481177  
-Real-cugan原项目地址:  
-https://github.com/bilibili/ailab/tree/main/Real-CUGAN
+[相关B站教程链接](https://www.bilibili.com/read/cv18481177  )
+
+[Real-cugan原项目地址](https://github.com/bilibili/ailab/tree/main/Real-CUGAN)
