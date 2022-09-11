@@ -23,7 +23,7 @@
 
 仅需配置（暂仅支持N卡CUDA)  [CUDA 11.6+](https://developer.nvidia.com/cuda-downloads)
 
-下载[便携版环境](https://pan.baidu.com/s/1AQCp-vUy1ROD8jKHEQtE2Q?pwd=Nang)
+下载便携版环境：[百度网盘](https://pan.baidu.com/s/1AQCp-vUy1ROD8jKHEQtE2Q?pwd=Nang) [Github Release](https://github.com/NangInShell/AUST-GUI/releases)
 
 其余相关环境已经配置好，解压后执行  ```点我运行.bat```
 
