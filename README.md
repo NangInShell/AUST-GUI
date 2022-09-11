@@ -23,7 +23,7 @@
 
 暂仅支持N卡
 
-下载便携版环境：[Github Release](https://github.com/NangInShell/AUST-GUI/releases)  ||  [百度网盘](https://pan.baidu.com/s/1AQCp-vUy1ROD8jKHEQtE2Q?pwd=Nang) 
+下载便携版环境：[Github Release](https://github.com/NangInShell/AUST-GUI/releases)  |  [百度网盘](https://pan.baidu.com/s/1AQCp-vUy1ROD8jKHEQtE2Q?pwd=Nang) 
 
 其余相关环境已经配置好，解压后执行  ```点我运行.bat```
 
