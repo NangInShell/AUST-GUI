@@ -17,7 +17,7 @@
 方法一：  
 下载便携版环境，解压后直接点击 **点我运行.bat**   
 方法二：  
-下载主要文件，cmd运行python AUST_Main.py    
+下载主要文件，Python相关环境需要自行配置，运行AUST_Main.py文件    
 
 [相关B站教程链接](https://www.bilibili.com/read/cv18481177  )
 
