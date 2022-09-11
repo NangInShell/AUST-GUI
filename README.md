@@ -21,7 +21,7 @@
 
 ## 便携版
 
-仅需配置（暂仅支持N卡CUDA)  [CUDA 11.6+](https://developer.nvidia.com/cuda-downloads)
+暂仅支持N卡
 
 下载便携版环境：[百度网盘](https://pan.baidu.com/s/1AQCp-vUy1ROD8jKHEQtE2Q?pwd=Nang) [Github Release](https://github.com/NangInShell/AUST-GUI/releases)
 
