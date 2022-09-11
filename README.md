@@ -1,23 +1,34 @@
-# AUST(Anime Upscale Tool)
+# AUST(Anime UpScale Tool)
 基于real_cugan+ffmpeg管道拆帧->超分辨率->压制的二次元动漫超分辨率开源GUI项目。      
 
-***便携版下载地址，下载解压即可使用：***  
+## 快速开始
 
-```
-百度网盘下载地址：
+### 预先配置
 
-链接：https://pan.baidu.com/s/1AQCp-vUy1ROD8jKHEQtE2Q?pwd=Nang
-```
+[CUDA 11.6+](https://developer.nvidia.com/cuda-downloads)
 
+[Python 3.8+](https://www.python.org/downloads)
 
-***跪求大佬们测试提BUG和改进意见***
+[PyTorch 1.12](https://pytorch.org)
 
-使用方法  
-方法一：  
-下载便携版环境，下载地址上面已经给出，各个相关环境已经配置好，解压后直接点击 **点我运行.bat**   
-方法二：  
-下载主要文件，Python相关环境需要自行配置，运行AUST_Main.py文件.确保电脑环境里有FFMpeg.    
+[FFmpeg-GPL](https://github.com/BtbN/FFmpeg-Builds/releases)
+
+### 运行
+
+``` pip install -r requirements.txt ```
+
+``` python AUST_Main.py ```
+
+## 便携版
+
+仅需配置（暂仅支持N卡CUDA)  [CUDA 11.6+](https://developer.nvidia.com/cuda-downloads)
+
+下载[便携版环境](https://pan.baidu.com/s/1AQCp-vUy1ROD8jKHEQtE2Q?pwd=Nang)
+
+其余相关环境已经配置好，解压后执行  ```点我运行.bat```
+
+## 参考
 
 [相关B站教程链接](https://www.bilibili.com/read/cv18481177  )
 
-[Real-cugan原项目地址](https://github.com/bilibili/ailab/tree/main/Real-CUGAN)
+[Real-CUGAN原项目地址](https://github.com/bilibili/ailab/tree/main/Real-CUGAN)
