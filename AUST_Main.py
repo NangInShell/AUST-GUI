@@ -208,7 +208,6 @@ class Video_SR_Thread(QThread):
 
 
             tmp = video_name.split(".")
-            video_no_audio = ".".join(tmp[:-1]) + '_no_audio.' + self.Vformat  # 无音频源
             out_video = ".".join(tmp[:-1]) + '_4K.' + self.Vformat  # 音视频合并
             FFMPEG_BIN = "ffmpeg.exe"
 
@@ -230,10 +229,17 @@ class Video_SR_Thread(QThread):
                           '-pix_fmt', 'rgb24',
                           '-r', str(fps),  # frames per second
                           '-i', '-',  # The imput comes from a pipe
+                          '-i', video_name,
+                          '-map','0:v:0',
+                          '-map','1:a',
                           '-preset:v', self.Preset,
                           '-color_range','tv',
                           '-sws_flags', 'accurate_rnd+full_chroma_int+bitexact',
                           '-c:v', self.Vcode,
+                          '-c:a', 'flac',
+                          '-strict', '-2',
+                          '-ar', '48000',
+                          '-sample_fmt', 's32',
                           '-profile:v', self.Profile,
                           '-pix_fmt', self.Yuv]
 
@@ -264,7 +270,8 @@ class Video_SR_Thread(QThread):
                 command_in.append('-color_primaries')
                 command_in.append(v_info['color_primaries'])
 
-            command_in.append(video_no_audio)
+            command_in.append(out_video)
+
             print(command_in)
             pipe_out = sp.Popen(command_out, stdout=sp.PIPE, bufsize=10 ** 8)
 
@@ -294,16 +301,15 @@ class Video_SR_Thread(QThread):
                     int((((frames_num - num) * time_use) % 3600) / 60)) + 'min ' + str(
                     int(((frames_num - num) * time_use) % 60)) + 'sce'
                 print(time_message)
-            print('完成视频的帧合成,正在关闭管道，请稍等')
+            print('正在关闭管道，请稍等')
+
+
+
             pipe_in.stdin.close()
             pipe_out.stdout.close()
             pipe_in.wait()
             pipe_out.wait()
-            print('完成视频的帧合成,正在进行音视频合成，请稍等')
-            command_merge = sp.Popen(
-                'ffmpeg -y -loglevel quiet -i ' + video_no_audio + ' -i ' + video_name + ' -map 0:v:0 -map 1:a:0 -c:v copy -strict -2 -c:a flac ' + out_video + '',
-                shell=True)
-            print('完成音视频合并，音频格式统一无损转换为flac格式')
+            print('完成视频的帧合成')
 
         self.signal.emit()
 
