@@ -1,3 +1,4 @@
+# 停止更新 新工具VSET已经更新
 # AUST(Anime UpScale Tool)
 基于real_cugan+ffmpeg管道拆帧->超分辨率->压制的二次元动漫超分辨率开源GUI项目。      
 
