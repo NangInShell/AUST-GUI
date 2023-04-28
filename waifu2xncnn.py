@@ -25,5 +25,5 @@ def waifu2x_ncnn(model,gpu_id,tta,num_threads,tilesize):
     noise, scale, version = model_switch[model] \
         if model in model_switch else [0, 1, 'models-cunet']
 
-    waifu2x = Waifu2x(gpuid=int(gpu_id),tta_mode=tta,tilesize=int(tilesize),model=int(version),noise=int(noise),scale=int(scale),num_threads=int(num_threads))
+    waifu2x = Waifu2x(gpuid=int(gpu_id),tta_mode=bool(tta),tilesize=int(tilesize),model=str(version),noise=int(noise),scale=int(scale),num_threads=int(num_threads))
     return waifu2x.process_cv2
